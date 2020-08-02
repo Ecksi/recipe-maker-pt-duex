@@ -1,15 +1,12 @@
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator";
-import { mapActions, mapGetters } from "vuex";
+import { mapActions } from "vuex";
 
 @Component({
   methods: {
     ...mapActions({
       addRecipe: "addRecipe"
     }),
-    ...mapGetters({
-      searchList: "searchList"
-    })
   }
 })
 export default class AddRecipes extends Vue {
