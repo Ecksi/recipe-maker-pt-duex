@@ -13,7 +13,7 @@ const routes: Array<RouteConfig> = [
   {
     path: "/add-recipes",
     name: "AddRecipes",
-    component: () => import(/* webpackChunkName: "add-recipes" */ "../views/AddRecipes.vue")
+    component: () => import("../views/AddRecipes.vue")
   }
 ];
 
